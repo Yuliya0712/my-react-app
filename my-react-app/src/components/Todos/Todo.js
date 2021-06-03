@@ -19,6 +19,18 @@ import {useState} from 'react';
  ]);
 console.log(todos);
 
+const[newTodo, setNewTodo] = useState(initialState, '');
+
+const inputChange = (e)=>{
+setNewTodo(e.target.value);
+}
+
+const addTodo = (e) =>{
+    e.preventDefault();
+    const newTodoItem = {
+        
+    }
+}
     return (
       <div className="todos">
         <form className="todos_form">
