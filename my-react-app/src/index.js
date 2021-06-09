@@ -1,8 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import Todo from './components/Todos/Todo';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import Todos from "./components/Todos/Todos";
+import Register from './components/Register/Register'
 
-
-ReactDOM.render(<Todo />, document.getElementById('root'));
-
+ReactDOM.render(<Register />, document.getElementById("root"));
