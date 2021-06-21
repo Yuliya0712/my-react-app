@@ -6,8 +6,6 @@ import { useState } from "react";
 const Todos = () => {
   const [todos, setTodos] = useState([]);
 
-<<<<<<< HEAD
-=======
   // const useState = (argument) => {
   //   // ...
   //   return [a, b];
@@ -32,7 +30,6 @@ const Todos = () => {
   // ]);
   const [todos, setTodos] = useState([]);
 
->>>>>>> 67661ecfd8cd74c993eee69bb21409651ab4229f
   const [newTodo, setNewTodo] = useState('');
 
   const inputChange = (e) => {
@@ -50,19 +47,6 @@ const Todos = () => {
     setTodos((prevState) => [newTodoItem, ...prevState])
     setNewTodo('')
 
-<<<<<<< HEAD
-  };
-
-  console.log(todos)
-
-  const editTodo = id => {
-
-  }
-
-  function deleteTodo (id) {
-    setTodos(todos.filter(todo=>todo.id !== id))
-  }
-=======
     // console.log('newTodoItem', newTodoItem)
   };
 
@@ -79,45 +63,11 @@ const Todos = () => {
   // }
   //
   // console.log(tests)
->>>>>>> 67661ecfd8cd74c993eee69bb21409651ab4229f
 
   return (
     <div className="todos">
       <form className="todos__form"
             onSubmit={addTodo}>
-<<<<<<< HEAD
-        <TextField label="Your new todo..."
-                   type="text"
-                   size="small"
-                   name="todo"
-                   value={newTodo}
-                   onChange={inputChange}
-                   variant="outlined" />
-        {/*<input*/}
-        {/*  type="text"*/}
-        {/*  value={newTodo}*/}
-        {/*  onChange={inputChange}*/}
-        {/*  placeholder="Your new todo..."*/}
-        {/*/>*/}
-        <Button variant="contained"
-                type="submit"
-                color="primary">Add todo</Button>
-      </form>
-      <div className="todos__list">
-        {todos.length
-          ? (todos.map(({id, text}) => {
-            return (
-              <div className="todos__item"
-                   key={id}>
-                <p>{text}</p>
-                <div className="todos__actions">
-                  <IconButton size="small"
-                              color="primary"><Edit /></IconButton>
-                  <Button startIcon={<Delete />}
-                          onClick={() => deleteTodo(id)}>Delete</Button>
-
-                </div>
-=======
         <input
           type="text"
           value={newTodo}
@@ -148,7 +98,6 @@ const Todos = () => {
               <div className="todos__item"
                    key={id}>
                 {other}
->>>>>>> 67661ecfd8cd74c993eee69bb21409651ab4229f
               </div>
             );
           }))
